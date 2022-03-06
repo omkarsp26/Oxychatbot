@@ -8,13 +8,11 @@ Created on Sat Mar  5 10:33:25 2022
 import requests
 from flask import Flask, request
 from twilio.twiml.messaging_response import MessagingResponse
-from googletrans import Translator
 
-from src.pythonREPL import execute_python, install_package
+#from src.pythonREPL import execute_python, install_package
 import src.services as services
 
 app = Flask(__name__)
-translator = Translator()
 
 @app.route("/")
 def hello():
