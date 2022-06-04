@@ -55,7 +55,19 @@ def bot():
     
     elif '4' in incoming_msg:
         output=("ऑक्सीजन सिलेंडर समस्या निवारण और रखरखाव  के बारे में अतिरिक्त जानकारी के लिए लिंक का अनुसरण करें  - https://drive.google.com/file/d/1GnJbdDAGY8Qhey1I-luFBCjLVY1IcSFv/view?usp=sharing")
-   
+        
+    elif '5' in incoming_msg:
+        output=("PSA Troubleshooting\n \na compressor troubleshooting  \nb dryer troubleshooting \nc Adsorption tower troubleshooting")
+        
+    elif 'a' in incoming_msg:
+        output=("If compressor is getting tripped in between then check the filters of the compressor  in case of blocked replace or clean the filters")
+    
+    elif 'b' in incoming_msg:
+        output=("if dryer is shwing out of range dew point then contact service provider and rectify the issue with the help of vendor")
+        
+    elif 'c' in incoming_msg:
+        output=("if adsorption tower is failing to purge nitrogencheck the mufflers")
+ 
     msg.body(output)
     return str(resp) 
 
