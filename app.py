@@ -42,7 +42,7 @@ def bot():
     
     if 'hi' in incoming_msg:
         #out=translator.translate("troubleshooting", dest='hi')
-        output=(" This chatbot is in testing phase and is created by Omkar Patil for any doubts and concerns please contact me on 8329403968\n \nनमस्कार, ऑक्सीजन उपकरण एवं इससे संबंधित जानकारी के लिए आपका स्वागत है   \nजानकारी के लिए  विकल्प चुनें -  \n1 पीएसए समस्या निवारण और रखरखाव,  \n2 ऑक्सीजन सांद्रता समस्या निवारण और रखरखाव, \n3 एलएमओ टैंक एहतियाती उपाय, \n4 ऑक्सीजन सिलेंडर समस्या निवारण और रखरखाव")
+        output=(" This chatbot is in testing phase and is created by Omkar Patil for any doubts and concerns please contact me on 8329403968\n \nनमस्कार, ऑक्सीजन उपकरण एवं इससे संबंधित जानकारी के लिए आपका स्वागत है   \nजानकारी के लिए  विकल्प चुनें -  \n1 पीएसए समस्या निवारण और रखरखाव,  \n2 ऑक्सीजन सांद्रता समस्या निवारण और रखरखाव, \n3 एलएमओ टैंक एहतियाती उपाय, \n4 ऑक्सीजन सिलेंडर समस्या निवारण और रखरखाव \n5 PSA Oxygen Generator troubleshooting and maintenance details")
     
     elif '1' in incoming_msg:
         output = ("पीएसए संयंत्र - समस्या निवारण और रखरखाव के बारे में अतिरिक्त जानकारी के लिए लिंक का अनुसरण करें -  \n https://drive.google.com/file/d/1o3GC7rGjtjclPjyAe559AKnWG7jOTg-7/view?usp=sharing")
@@ -60,13 +60,13 @@ def bot():
         output=("PSA Troubleshooting\n \na compressor troubleshooting  \nb dryer troubleshooting \nc Adsorption tower troubleshooting")
         
     elif 'a' in incoming_msg:
-        output=("If compressor is getting tripped in between then check the filters of the compressor  in case of blocked replace or clean the filters")
+        output=("If compressor is getting tripped in between then check the filters of the compressor  in case of blocked replace or clean the filters\n \n if compressor is failing to start then check the electrical connection of the compressor\n \n If compressor is overheating signal then check the ventilation of the PSA plant room, Even after proper ventilation if the compressor is showing overheating signal then connect with vendor and resgister acomplaint")
     
     elif 'b' in incoming_msg:
-        output=("if dryer is shwing out of range dew point then contact service provider and rectify the issue with the help of vendor")
+        output=("if dryer is showing out of range dew point then contact service provider and rectify the issue with the help of vendor")
         
     elif 'c' in incoming_msg:
-        output=("if adsorption tower is failing to purge nitrogencheck the mufflers")
+        output=("if adsorption tower is failing to purge nitrogen check the mufflers")
  
     msg.body(output)
     return str(resp) 
