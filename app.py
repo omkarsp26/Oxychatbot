@@ -60,7 +60,7 @@ def bot():
         output=("PSA Troubleshooting\n \na compressor troubleshooting  \nb dryer troubleshooting \nc Adsorption tower troubleshooting")
         
     elif 'a' in incoming_msg:
-        output=("If compressor is getting tripped in between then check the filters of the compressor  in case of blocked replace or clean the filters\n \n if compressor is failing to start then check the electrical connection of the compressor\n \n If compressor is overheating signal then check the ventilation of the PSA plant room, Even after proper ventilation if the compressor is showing overheating signal then connect with vendor and resgister acomplaint")
+        output=("If compressor is getting tripped in between then check the filters of the compressor  in case of blocked replace or clean the filters\n \n if compressor is failing to start then check the electrical connection of the compressor. In case of phase change or compressor starter relay related problem, Call the compressor OEM and reset the relay with the help of service engineer\n \n If compressor is showing overheating signal on HMI then check the ventilation of the PSA plant room, Even after proper ventilation if the compressor is showing overheating signal then connect with vendor and resgister a complaint")
     
     elif 'b' in incoming_msg:
         output=("if dryer is showing out of range dew point then contact service provider and rectify the issue with the help of vendor")
